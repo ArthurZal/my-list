@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <h1>Compras da semana</h1>
+        <h1>Shopping List</h1>
         <form id="addItems">
             <input type="text" id="newItem" class="newItem">
-            <input type="submit" value="Add">
+            <input type="submit" value="ADD">
         </form>
-        <form id="viewItens">
-            <input type="checkbox" name="itemContent" id="itemContent">
-            <label for="itemContent">Pão de forma</label>
-            <input type="submit" value="Delete">
-        </form>
+        <p>There are no items to display</p>
+        <P id="msg-delete" class="disable">Deleted Item</P>
     </main>
     <script src="scripts.js"></script>
 </body>

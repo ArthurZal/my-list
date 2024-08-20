@@ -47,4 +47,17 @@ function createNewViewElements(item) {
 
     newParagraph.innerText = item;
 
+    newCheckbox.addEventListener('change', (event) => {
+        if(event.target.checked) {
+
+            newParagraph.style.textDecoration = 'line-through';
+            console.log('checkbox marcado')
+
+        } else {
+
+            newParagraph.style.textDecoration = 'none';
+            console.log('checkbox desmarcado')
+        }
+    })
+
 };

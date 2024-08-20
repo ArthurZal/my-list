@@ -50,13 +50,14 @@ function createNewViewElements(item) {
     newCheckbox.addEventListener('change', (event) => {
         if(event.target.checked) {
 
-            newParagraph.style.textDecoration = 'line-through';
-            console.log('checkbox marcado')
+            newParagraph.style.textDecoration = 'line-through'; 
+            newParagraph.style.color = 'grey';
 
         } else {
 
             newParagraph.style.textDecoration = 'none';
-            console.log('checkbox desmarcado')
+            newParagraph.style.color = 'black';
+
         }
     })
 
